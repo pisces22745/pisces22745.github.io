@@ -1,0 +1,50 @@
+html,
+body,
+div,
+header,
+nav,
+footer,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+i,
+p,
+span,
+img,
+form,
+input,
+textarea,
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: "microsoft yahei";
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.clearfix {
+	*+height: 1%;
+}
