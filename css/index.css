@@ -407,14 +407,23 @@ img {
 	/*padding: .2rem 0 0 .2rem;*/
 	position: relative;
 	background-color: #333333;
-	overflow: hidden;
 }
 
+.experience:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: .4rem solid transparent;
+	border-top: .4rem solid #333;
+	bottom: -.8rem;
+	right: .5rem;
+	z-index: 2;
+}
 
 .ex_content {
 	position: relative;
 	padding-bottom: .3rem;
-	
 }
 
 .scrubber {
@@ -513,7 +522,7 @@ img {
 
 .content_item_header_intro {
 	font-size: .14rem;
-	line-height: .22rem;
+	line-height: 1.5;
 	padding: 0 .15rem;
 	margin-bottom: .1rem;
 }
@@ -548,8 +557,61 @@ img {
 	border-top: 1px solid #d6d6d6;
 	color: #b2b2b2;
 }
-.content_item_footer  a{
+
+.content_item_footer a {
 	color: #666;
+}
+
+.works {
+	background-color: #ece4dc;
+	position: relative;
+}
+.works::before{
+	position: absolute;
+	height: .5rem;
+}
+.works .works-content {
+	padding: .6rem 0;
+	overflow: hidden;
+}
+
+.works .photos {
+	margin: .3rem auto;
+	box-sizing: border-box;
+	width: 4rem;
+	height: 3rem;
+	position: relative;
+	border: 1px solid #999;
+	padding: .1rem;
+	border-radius: .1rem;
+	background-color: #eee;
+	box-shadow: 0 0 .2rem rgba(0, 0, 0, .5);
+	cursor: pointer;
+}
+
+.works .photos span {
+	position: absolute;
+	display: block;
+	width: 3.78rem;
+	background-color: rgba(0, 0, 0, .5);
+	height: .4rem;
+	line-height: .4rem;
+	bottom: .1rem;
+	left: .1rem;
+	margin-top: -.15rem;
+	text-align: center;
+	letter-spacing: .02rem;
+}
+@media only screen and (min-width: 900px) {
+	.works .works-content {
+		overflow: hidden;
+		width: 9rem;
+		margin: 0 auto;
+	}
+	.works .photos {
+		margin: 0 .25rem;
+		float: left;
+	}
 }
 
 /*尾部*/

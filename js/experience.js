@@ -24,7 +24,11 @@ Experience.prototype = {
 		return top;
 	},
 	scrollTop: function(to) {
-		window.scroll(0, to);
+		var start = document.body.scrollTop;
+		fx(function(now){
+			window.scroll(0, now);
+		},start,to);
+		
 	},
 	get_body_w: function() {
 		return document.body.offsetWidth;
