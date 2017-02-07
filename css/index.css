@@ -565,6 +565,7 @@ img {
 .works {
 	background-color: #ece4dc;
 	position: relative;
+	padding-bottom: .2rem;
 }
 .works::before{
 	position: absolute;
@@ -613,7 +614,24 @@ img {
 		float: left;
 	}
 }
-
+.links{
+	text-align: center;
+}
+.links>span{
+	color: #666;
+	font-size: .18rem;
+}
+.links>a{
+	display: inline-block;
+	line-height: 1.5;
+	border-right: 1px solid #999;
+	padding-right: .05rem;
+	color: #666;
+	font-size: .18rem;
+}
+.links>a:last-child{
+	border-right: none;
+}
 /*尾部*/
 
 footer {
@@ -657,13 +675,13 @@ footer ul.contact {
 	text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
-	footer ul.contact {
-		padding: .2rem 0;
-		overflow: hidden;
-	}
-	.contact li {
-		width: 100%;
-		text-align: left;
-	}
-}
+/*@media only screen and (max-width: 767px) {*/
+	/*footer ul.contact {*/
+		/*padding: .2rem 0;*/
+		/*overflow: hidden;*/
+	/*}*/
+	/*.contact li {*/
+		/*width: 100%;*/
+		/*text-align: left;*/
+	/*}*/
+/*}*/
