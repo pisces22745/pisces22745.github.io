@@ -130,7 +130,7 @@ img {
 	height: 0;
 	border: .4rem solid transparent;
 	border-bottom: .4rem solid #edb635;
-	top: -.8rem;
+	top: -.78rem;
 	left: .5rem;
 }
 
@@ -141,7 +141,7 @@ img {
 	height: 0;
 	border: .4rem solid transparent;
 	border-top: .4rem solid #edb635;
-	bottom: -.8rem;
+	bottom: -.78rem;
 	right: .5rem;
 	z-index: 2;
 }
@@ -202,7 +202,7 @@ img {
 	height: 0;
 	border: .4rem solid transparent;
 	border-top: .4rem solid #eee;
-	bottom: -.8rem;
+	bottom: -.78rem;
 	left: .5rem;
 	z-index: 2;
 }
@@ -416,7 +416,7 @@ img {
 	height: 0;
 	border: .4rem solid transparent;
 	border-top: .4rem solid #333;
-	bottom: -.8rem;
+	bottom: -.78rem;
 	right: .5rem;
 	z-index: 2;
 }
